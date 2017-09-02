@@ -15,9 +15,9 @@ But then partial application happens and suddenly `append x` no longer _appends_
 **This is ridiculous.**
 
 ## The Solution
-So I created a module that rights this wrong by lefting all the rights. With the functions in this module, `append b` will really mean that `b` gets appended; the old `append` is now `prepend`, since that is what that means.
+So I created a module that rights this wrong by lefting all the rights. With the functions in this module, `append b` will really mean that `b` gets appended; the old `append` is now `prepend`, since that is what makes sense in English, when used as a section.
 
-Thus, most functions in this module are simply flipped versions of the methods provided in Prelude.
+Thus, most functions in this module are simply flipped versions of the methods provided in Prelude, with other names corresponding to the original Prelude methods.
 
 Some others have had prepositions added to their names to make better sense in English.
 

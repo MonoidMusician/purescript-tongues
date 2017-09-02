@@ -84,7 +84,7 @@ composeBefore = flip composeAfter
 composeAfter :: forall b c d a. Control.Semigroupoid.Semigroupoid a => a c d -> (a b c -> a b d)
 composeAfter = Control.Semigroupoid.compose
 
--- | `applyTo x == (_ $ x)`
+-- | `applyTo x == (_ $ x) == (x # _)`
 applyTo :: forall a b. a -> ((a -> b) -> b)
 applyTo = flip id
 
